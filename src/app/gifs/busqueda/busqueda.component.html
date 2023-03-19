@@ -1,0 +1,11 @@
+<!-- #txtBuscar asigna una referencia a la caja del input -->
+<!-- con esta referencia utilizamos en el busqueda.component.ts @ViewChild -->
+
+<h5>Buscar:</h5>
+        <input
+           type="text"
+           class="form-control"
+           placeholder="Buscar Gifs..."
+           (keyup.enter)="buscar( )"
+           #txtBuscar
+           >

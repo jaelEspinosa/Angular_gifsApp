@@ -1,0 +1,22 @@
+
+
+
+<div class="row overflow-resultados scrollbar-min">
+  <div
+        *ngFor="let gif of resultados"
+        class="col-xs-12 col-sm-6 col-md-4 animate__animated animate__fadeInUp">
+    <div class="card m-2">
+      <img
+            [src]="gif.images.downsized_medium.url"
+            [alt]="gif.title"
+            class="card-img-top"
+            >
+      <div class="card-body">
+              <p class="card-text">
+                  {{gif.title}}
+              </p>
+            </div>
+    </div>
+  </div>
+</div>
+
